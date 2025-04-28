@@ -43,52 +43,52 @@ sample_data/annotations/train2014_annotations_subset.json
 
 sample_data/subsets/train_subset_ids.txt
 
-Usage
+🚀 Usage
 1. ResNet + Bi-LSTM Pipeline
-Open ResNet_BiLSTM_CSCE5218.ipynb in Jupyter or Colab.
+1. Open ResNet_BiLSTM_CSCE5218.ipynb in Jupyter or Colab.
 
-Execute cells in order:
+E2. xecute cells in order:
 
-Block 1: Imports, path config, seeds
+  Block 1: Imports, path config, seeds
 
-Block 2: Build records list & answer vocabulary
+  Block 2: Build records list & answer vocabulary
 
-Block 3: FastText embedding setup
+  Block 3: FastText embedding setup
 
-Block 4: Extract & cache ResNet-101 image features
+  Block 4: Extract & cache ResNet-101 image features
 
-Block 5: Dataset & DataLoader setup
+  Block 5: Dataset & DataLoader setup
 
-Block 6: BiLSTM_VQA model definition
+  Block 6: BiLSTM_VQA model definition
 
-Block 7: Training loop & epoch metrics
+  Block 7: Training loop & epoch metrics
 
 2. ViLT Fine-Tuning Pipeline
-Open ViLT_CSCE5218.ipynb in Jupyter or Colab.
+1. Open ViLT_CSCE5218.ipynb in Jupyter or Colab.
 
-Execute cells in order:
+2. Execute cells in order:
 
-Block 1: Imports, path config, seeds
+  Block 1: Imports, path config, seeds
 
-Block 2: Build records list & answer vocabulary
+  Block 2: Build records list & answer vocabulary
 
-Block 3: Load ViLT processor & build label maps
+  Block 3: Load ViLT processor & build label maps
 
-Block 4: ViltVQADataset & DataLoader
+  Block 4: ViltVQADataset & DataLoader
 
-Block 5: Load ViltForQuestionAnswering + optimizer
+  Block 5: Load ViltForQuestionAnswering + optimizer
 
-Blocks 6–7: Fine-tuning loops (epochs 1–7, then 8–10)
+  Blocks 6–7: Fine-tuning loops (epochs 1–7, then 8–10)
 
-Block 8: Evaluation (Top-1 & VQA-soft accuracy)
+  Block 8: Evaluation (Top-1 & VQA-soft accuracy)
 
-Block 9: Error analysis by question prefix
+  Block 9: Error analysis by question prefix
 
-Utility Script
+🛠 Utility Script
 fix_widgets.py
-Removes stale metadata.widgets entries so GitHub can render notebooks
+Removes stale metadata.widgets entries so GitHub can render notebooks:
 
-Contact
+🤝 Contact
 Maintainer: Rahul Chaudhary
 
 Email: rc2152001@gmail.com
